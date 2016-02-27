@@ -1,3 +1,5 @@
+//Just copy and paste this code to browsers console on http://orteil.dashnet.org/cookieclicker/ page and enjoy the game to be played for you.
+
 
 var init = function () {
 	var totalObjects = Game.ObjectsById.length;
@@ -63,6 +65,6 @@ function collectFirstCookies()
 		clearInterval(firstCookiesInterval);
 	}
 }
-var firstCookiesInterval = setInterval(collectFirstCookies, 2);
+var firstCookiesInterval = setInterval(collectFirstCookies, 2); //apparently game can't handle faster than that.
 
 
