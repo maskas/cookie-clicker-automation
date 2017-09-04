@@ -34,7 +34,7 @@ var init = function () {
 		Game.ObjectsById[objectToBuyId].buy(1); //buy one ifpossible
 
 		//always do all available upgrades.
-		for (var i=0; i < Game.UpgradesInStore.count - 1; i++) {
+		for (var i=0; i < Game.UpgradesInStore.length; i++) {
 			if (Game.UpgradesInStore[i].name == "One mind") { //avoid this upgrade. It may be harmful
 				continue;
 			}
