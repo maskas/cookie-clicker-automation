@@ -33,13 +33,15 @@ var init = function () {
 		}
 		Game.ObjectsById[objectToBuyId].buy(1); //buy one ifpossible
 
-		//always do all upgrades is available.
-		if (Game.UpgradesInStore[0] && Game.UpgradesInStore[0].unlocked) {
-			Game.UpgradesInStore[0].buy();		
+		//always do all available upgrades.
+		for (var i=0; i < count(Game.UpgradesInStore) - 1; i++) {
+			if (Game.UpgradesInStore[i].name == "One mind") { //avoid this upgrade. It may be harmful
+				continue;
+			}
+			Game.UpgradesInStore[i].buy();
 		}
 
-
-		//Autoclose notes with 10 seconds delay
+		//auto close notes with 10 seconds delay
 		if (Game.Notes.length) {
 			var firstNote = Game.Notes[Game.Notes.length -1];
 			if (new Date().getTime() - firstNote.date > 10000) {
