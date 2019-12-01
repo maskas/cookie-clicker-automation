@@ -28,7 +28,7 @@ var init = function () {
 
 
 		if (lastObjectToBuyId != objectToBuyId) {
-			console.log("Object wiating to be purchased: " + Game.ObjectsById[objectToBuyId].name);
+			console.log("An item to be purchased next: " + Game.ObjectsById[objectToBuyId].name);
 			lastObjectToBuyId = objectToBuyId;		
 		}
 		Game.ObjectsById[objectToBuyId].buy(1); //buy one ifpossible
