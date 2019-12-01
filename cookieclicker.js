@@ -67,5 +67,5 @@ function collectFirstCookies()
 		clearInterval(firstCookiesInterval);
 	}
 }
-var firstCookiesInterval = setInterval(collectFirstCookies, 2); //apparently game can't handle faster than that.
+var firstCookiesInterval = setInterval(collectFirstCookies, 2); //apparently the game can't handle faster than that.
 
