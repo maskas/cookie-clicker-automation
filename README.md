@@ -1,6 +1,8 @@
 # cookie-clicker-automation
 This little script plays CookieClicker (http://orteil.dashnet.org/cookieclicker/) game for you.
 
+![Cookie Clicker Automator](cookie-clicker-automator.png)
+
 Just open browsers javascript console and paste javascript code into it from cookieclicker.js file. Enjoy cookies to be collected for you.
 
 NO BRUTEFORCE DISCLAIMER
