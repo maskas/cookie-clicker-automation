@@ -60,10 +60,12 @@ init();
 
 console.log('Bootstraping the game by cooking 100 cookies');
 
+vat bigCookie = document.getElementById("bigCookie");
+
 function collectFirstCookies()
 {
-	document.getElementById("bigCookie").click();
-	if (Game.cookies == 100) {
+	bigCookie.click();
+	if (Game.cookies >= 100) {
 		clearInterval(firstCookiesInterval);
 	}
 }
