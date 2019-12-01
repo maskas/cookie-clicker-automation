@@ -52,15 +52,11 @@ var init = function () {
 	setInterval(decide, 200);
 };
 
-
-
-
-
 init();
 
 console.log('Bootstraping the game by cooking 100 cookies');
 
-vat bigCookie = document.getElementById("bigCookie");
+var bigCookie = document.getElementById("bigCookie");
 
 function collectFirstCookies()
 {
