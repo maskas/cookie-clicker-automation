@@ -1,4 +1,4 @@
-# cookie-clicker-automation
+# cookie-clicker-automation (BOT)
 This little script plays CookieClicker (http://orteil.dashnet.org/cookieclicker/) game for you.
 
 ![Cookie Clicker Automator](cookie-clicker-automator.png)
